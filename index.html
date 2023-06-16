@@ -193,10 +193,13 @@
                 name: "Dr. Ashish Chaturvedi",
                 phone: "+91 9810 538 410",
                 email: "ashish.chaturvedi@undp.org",
-                website: "https://www.undp.org/india"
+                website: "https://www.undp.org/india",
+                role: "Head, Action for Climate and Environment",
+                org: "United Nations Development Program",
             };
+
             // create a vcard file
-            var vcard = "BEGIN:VCARD\nVERSION:4.0\nFN:" + contact.name + "\nTEL;TYPE=work,voice:" + contact.phone + "\nEMAIL:" + contact.email + "\URL;type=Website;CHARSET=UTF-8" + contact.website + "\nEND:VCARD";
+            var vcard = "BEGIN:VCARD\nVERSION:4.0\nFN:" + contact.name + "\nTEL;type=Cell,voice:" + contact.phone + "\nEMAIL;CHARSET=UTF-8;type=Email,Email:" + contact.email + "\nURL;type=Website;CHARSET=UTF-8:" + contact.website + "\nROLE;CHARSET=UTF-8:" + contact.role + "\nORG; CHARSET = UTF-8:" + contact.org + "\nEND:VCARD";
             var blob = new Blob([vcard], { type: "text/vcard" });
             var url = URL.createObjectURL(blob);
 
