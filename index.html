@@ -188,6 +188,10 @@
     <script>
         var saveBtn = document.getElementById("importBtn");
         saveBtn.addEventListener("click", function () {
+            saveBtn.disabled=true;
+            setTimeout(() => {
+                saveBtn.disabled=false;
+            }, 5000);
             // Get the contact information from the website
             var contact = {
                 name: "Dr. Ashish Chaturvedi",
