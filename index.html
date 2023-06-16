@@ -196,7 +196,7 @@
                 website: "https://www.undp.org/india"
             };
             // create a vcard file
-            var vcard = "BEGIN:VCARD\nVERSION:4.0\nFN:" + contact.name + "\nTEL;TYPE=work,voice:" + contact.phone + "\nEMAIL:" + contact.email + "\nWEB:" + contact.website + "\nEND:VCARD";
+            var vcard = "BEGIN:VCARD\nVERSION:4.0\nFN:" + contact.name + "\nTEL;TYPE=work,voice:" + contact.phone + "\nEMAIL:" + contact.email + "\nWEBSITE:" + contact.website + "\nEND:VCARD";
             var blob = new Blob([vcard], { type: "text/vcard" });
             var url = URL.createObjectURL(blob);
 
