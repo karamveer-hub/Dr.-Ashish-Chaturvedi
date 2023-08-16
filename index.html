@@ -15,13 +15,13 @@
         @font-face {
             font-family: "Proxima Nova";
 
-            src: url("fonts/ProximaNovaFont.otf");
+            src: url("fonts/Proxima\ Nova\ Font.otf");
         }
 
         @font-face {
             font-family: "SohneBreit, ProximaNova, sans-serif";
 
-            src: url("fonts/TestSohneBreit.otf");
+            src: url("fonts/TestSöhneBreit-Dreiviertelfett.otf");
         }
 
         img {
@@ -53,25 +53,23 @@
             height: 100%;
             width: 100%;
             flex-direction: column;
-            padding: 0 5px;
         }
 
         .container {
             height: 470px;
-            width: 100%;
-            max-width: 370px;
+            width: 370px;
             flex-direction: column;
         }
 
         .container .first_div {
+            height: 20%;
+            /* width: 260px; */
             justify-content: flex-start;
             color: #045D9F;
         }
 
         .container .first_div img {
             margin-right: 8px;
-            width: 280px;
-    height: 95.4px;
         }
 
         .container .second_div {
@@ -79,16 +77,15 @@
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            width: 77%;
+            width: 67%;
         }
 
         .container .second_div>img {
-            height: 163px;
-            width: 163px;
+            height: 150px;
+            width: 150px;
             margin: 0 auto;
             border-radius: 50%;
             box-shadow: 0 0 26px -10px #808080f2;
-            object-fit: cover;
         }
 
         .second_div div {
@@ -133,7 +130,7 @@
             background: none;
             border: 1px solid #0468b1;
             border-radius: 4px;
-        }p,h1{text-align: center;}
+        }
     </style>
 </head>
 
@@ -141,7 +138,7 @@
     <section class="wrapper display_flex">
         <div class="container ">
             <div class="first_div display_flex">
-                <img src="images/UNDP Logo Full.png" alt="UNDP Logo">
+                <img style="width:70%" src="images/UNDP Logo Full.png" alt="UNDP Logo">
                 <!-- <h2 style="font-size: 18px; font-family: 'Proxima Nova'">United Nation <br> Development Programme</h2> -->
             </div>
             <div class="second_div display_flex mx-auto">
@@ -172,6 +169,12 @@
                         </div>
                         <p>Web</p>
                     </a>
+                    <!-- <a class="display_flex" href="https://twitter.com/shokonoda">
+                        <div style="background-color: #1C8CD9; ">
+                            <img src="images/twitter.png" alt="">
+                        </div>
+                        <p>Twitter</p>
+                    </a> -->
                 </div>
                 <div>
                     <button id="importBtn">
@@ -194,7 +197,7 @@
                 name: "Dr. Ashish Chaturvedi",
                 phone: "+91 9810 538 410",
                 email: "ashish.chaturvedi@undp.org",
-                website: "www.undp.org/india",
+                website: "https://www.undp.org/india",
                 role: "Head, Action for Climate and Environment",
                 org: "United Nations Development Program",
             };
